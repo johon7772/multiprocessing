@@ -24,8 +24,7 @@ class FilesList(threading.Thread):
             wordCount = 0
 
 
-directory = '/Users/JohonAlimov/PycharmProjects/multithreading_task/files'
-filesList = FilesList(directory)
+directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
 
 filesAndWordCount = {}
 threadList = []
@@ -33,12 +32,13 @@ maxNumberOfThreads = 5
 threadLimiter = threading.BoundedSemaphore(maxNumberOfThreads)
 
 for fileDirectory in os.listdir(directory):
-    threadList.append(FilesList('{0}/{1}'.format(directory, fileDirectory)))
+    if not str(fileDirectory).startswith('.'):
+        threadList.append(FilesList('{0}/{1}'.format(directory, fileDirectory)))
 
 threadLimiter.acquire()
 for thread in threadList:
     thread.start()
-    print(thread)
+    print(threading.active_count())
 
 for thread in threadList:
     thread.join()

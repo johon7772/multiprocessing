@@ -21,22 +21,22 @@ class FilesList(mp.Process):
                 wordCount += len(words)
 
             filesAndWordCount[file] = wordCount
+            print(filesAndWordCount)
             wordCount = 0
 
 
-directory = '/Users/JohonAlimov/PycharmProjects/multithreading_task/files'
+directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
 filesAndWordCount = {}
 processList = []
 processLimiter = mp.BoundedSemaphore(5)
 
 if __name__ == '__main__':
-    fileDirectory = os.listdir(directory)
 
-    for f in fileDirectory:
-        processList.append(FilesList('{0}/{1}'.format(directory, f)))
+    for fileDirectory in os.listdir(directory):
+        if not str(fileDirectory).startswith('.'):
+            processList.append(FilesList('{0}/{1}'.format(directory, fileDirectory)))
 
     for process in processList:
-        print(process)
         process.start()
 
     for process in processList:
@@ -44,9 +44,3 @@ if __name__ == '__main__':
 
     timeExecuted = (time.time() - started) * 1000
     print(timeExecuted)
-    sortedFiles = sorted(filesAndWordCount.items(), key=lambda x: x[1])
-    print(sortedFiles)
-
-    gg = 'qq'
-
-
