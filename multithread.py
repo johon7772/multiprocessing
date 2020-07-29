@@ -1,6 +1,7 @@
 import os
 import threading
 import time
+import sys
 
 started = time.time()
 
@@ -24,7 +25,13 @@ class FilesList(threading.Thread):
             wordCount = 0
 
 
-directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
+# directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
+
+directory = sys.argv[1]
+if not os.path.exists(directory):
+    print('No such direction: ' + str(sys.argv[1])/
+          'Exiting program')
+    sys.exit()
 
 filesAndWordCount = {}
 threadList = []
@@ -38,13 +45,14 @@ for fileDirectory in os.listdir(directory):
 threadLimiter.acquire()
 for thread in threadList:
     thread.start()
-    print(threading.active_count())
+    # print(threading.active_count())
 
 for thread in threadList:
     thread.join()
 threadLimiter.release()
 
 timeExecuted = (time.time() - started) * 1000
-print(timeExecuted)
+print('Time of execution: ' + str(timeExecuted))
 sortedFiles = sorted(filesAndWordCount.items(), key=lambda x: x[1])
-print(sortedFiles)
+for item in sortedFiles:
+    print(item)

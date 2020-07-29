@@ -1,6 +1,7 @@
 import os
 import multiprocessing as mp
 import time
+import sys
 
 started = time.time()
 
@@ -25,13 +26,18 @@ class FilesList(mp.Process):
             wordCount = 0
 
 
-directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
-filesAndWordCount = {}
-processList = []
-processLimiter = mp.BoundedSemaphore(5)
-
 if __name__ == '__main__':
 
+    # directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
+    directory = sys.argv[1]
+
+    if not os.path.exists(directory):
+        print('No such directory: ' + str(directory))
+        sys.exit()
+
+    filesAndWordCount = {}
+    processList = []
+    processLimiter = mp.BoundedSemaphore(5)
     for fileDirectory in os.listdir(directory):
         if not str(fileDirectory).startswith('.'):
             processList.append(FilesList('{0}/{1}'.format(directory, fileDirectory)))
@@ -43,4 +49,7 @@ if __name__ == '__main__':
         process.join()
 
     timeExecuted = (time.time() - started) * 1000
-    print(timeExecuted)
+    print('Time of execution: ' + str(timeExecuted))
+    # sortedFiles = sorted(filesAndWordCount.items(), key=lambda x: x[1])
+    # for item in sortedFiles:
+    #     print(item)
