@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3980ce7a-cf15-4bf1-9508-cda222fd9edb" name="Default Changelist" comment="ver 1.1" />
+    <list default="true" id="3980ce7a-cf15-4bf1-9508-cda222fd9edb" name="Default Changelist" comment="ver 1.1">
+      <change beforePath="$PROJECT_DIR$/multiprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiprocess.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,16 +71,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ver 1.1" />
     <option name="LAST_COMMIT_MESSAGE" value="ver 1.1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="144" key="SettingsEditor" timestamp="1596007052283">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="520" y="190" key="SettingsEditor" timestamp="1596019494387">
+      <screen x="0" y="23" width="2560" height="1335" />
     </state>
     <state x="341" y="144" key="SettingsEditor/0.23.1680.965@0.23.1680.965" timestamp="1596007052283" />
+    <state x="520" y="190" key="SettingsEditor/0.23.2560.1335@0.23.2560.1335" timestamp="1596019494387" />
     <state x="440" y="242" key="Vcs.Push.Dialog.v2" timestamp="1596013139999">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
