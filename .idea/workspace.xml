@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3980ce7a-cf15-4bf1-9508-cda222fd9edb" name="Default Changelist" comment="ver 1.1">
-      <change beforePath="$PROJECT_DIR$/multiprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +84,11 @@
     </state>
     <state x="341" y="144" key="SettingsEditor/0.23.1680.965@0.23.1680.965" timestamp="1596007052283" />
     <state x="520" y="190" key="SettingsEditor/0.23.2560.1335@0.23.2560.1335" timestamp="1596019494387" />
-    <state x="440" y="242" key="Vcs.Push.Dialog.v2" timestamp="1596013139999">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="670" y="331" key="Vcs.Push.Dialog.v2" timestamp="1596019576555">
+      <screen x="0" y="23" width="2560" height="1335" />
     </state>
     <state x="440" y="242" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1596013139999" />
     <state x="440" y="245" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1596007585622" />
+    <state x="670" y="331" key="Vcs.Push.Dialog.v2/0.23.2560.1335@0.23.2560.1335" timestamp="1596019576555" />
   </component>
 </project>
