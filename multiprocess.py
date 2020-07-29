@@ -47,4 +47,6 @@ if __name__ == '__main__':
     sortedFiles = sorted(filesAndWordCount.items(), key=lambda x: x[1])
     print(sortedFiles)
 
+    gg = 'wp'
+
 

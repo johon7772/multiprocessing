@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3980ce7a-cf15-4bf1-9508-cda222fd9edb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/multiprocessing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/multiprocessing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multiprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiprocess.py" afterDir="false" />
-    </list>
+    <list default="true" id="3980ce7a-cf15-4bf1-9508-cda222fd9edb" name="Default Changelist" comment="ver 1.1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +49,14 @@
       <option name="presentableId" value="Default" />
       <updated>1595963269491</updated>
     </task>
+    <task id="LOCAL-00001" summary="ver 1.1">
+      <created>1596007550185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596007550185</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -68,14 +70,19 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ver 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver 1.1" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="341" y="144" key="SettingsEditor" timestamp="1596007052283">
       <screen x="0" y="23" width="1680" height="965" />
     </state>
     <state x="341" y="144" key="SettingsEditor/0.23.1680.965@0.23.1680.965" timestamp="1596007052283" />
-    <state x="440" y="245" key="Vcs.Push.Dialog.v2" timestamp="1596007483242">
-      <screen x="0" y="23" width="1680" height="965" />
+    <state x="440" y="242" key="Vcs.Push.Dialog.v2" timestamp="1596013139999">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="245" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1596007483242" />
+    <state x="440" y="242" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1596013139999" />
+    <state x="440" y="245" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1596007585622" />
   </component>
 </project>
