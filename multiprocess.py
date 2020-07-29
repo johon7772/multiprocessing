@@ -32,10 +32,8 @@ processLimiter = mp.BoundedSemaphore(5)
 if __name__ == '__main__':
     fileDirectory = os.listdir(directory)
 
-    6
     for f in fileDirectory:
         processList.append(FilesList('{0}/{1}'.format(directory, f)))
-        # print('{0}/{1}'.format(directory, f), processList)
 
     for process in processList:
         print(process)

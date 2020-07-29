@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3980ce7a-cf15-4bf1-9508-cda222fd9edb" name="Default Changelist" comment="" />
+    <list default="true" id="3980ce7a-cf15-4bf1-9508-cda222fd9edb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/multiprocessing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/multiprocessing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiprocess.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -31,5 +56,26 @@
       <updated>1595963269491</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="341" y="144" key="SettingsEditor" timestamp="1596007052283">
+      <screen x="0" y="23" width="1680" height="965" />
+    </state>
+    <state x="341" y="144" key="SettingsEditor/0.23.1680.965@0.23.1680.965" timestamp="1596007052283" />
+    <state x="440" y="245" key="Vcs.Push.Dialog.v2" timestamp="1596007483242">
+      <screen x="0" y="23" width="1680" height="965" />
+    </state>
+    <state x="440" y="245" key="Vcs.Push.Dialog.v2/0.23.1680.965@0.23.1680.965" timestamp="1596007483242" />
   </component>
 </project>
