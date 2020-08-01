@@ -52,7 +52,4 @@ for thread in threadList:
 threadLimiter.release()
 
 timeExecuted = (time.time() - started) * 1000
-print('Time of execution: ' + str(timeExecuted))
-sortedFiles = sorted(filesAndWordCount.items(), key=lambda x: x[1])
-for item in sortedFiles:
-    print(item)
+6

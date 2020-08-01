@@ -4,6 +4,7 @@ import time
 import sys
 
 started = time.time()
+filesAndWordCount = {}
 
 
 class FilesList(mp.Process):
@@ -21,35 +22,37 @@ class FilesList(mp.Process):
                 words = line.split()
                 wordCount += len(words)
 
+            global filesAndWordCount
             filesAndWordCount[file] = wordCount
-            print(filesAndWordCount)
             wordCount = 0
+            print(filesAndWordCount)
 
 
-if __name__ == '__main__':
-
-    # directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
-    directory = sys.argv[1]
+def main():
+    directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
+    # directory = sys.argv[1]
 
     if not os.path.exists(directory):
         print('No such directory: ' + str(directory))
         sys.exit()
 
-    filesAndWordCount = {}
     processList = []
     processLimiter = mp.BoundedSemaphore(5)
+
     for fileDirectory in os.listdir(directory):
         if not str(fileDirectory).startswith('.'):
-            processList.append(FilesList('{0}/{1}'.format(directory, fileDirectory)))
-
-    for process in processList:
-        process.start()
+            process = FilesList('{0}/{1}'.format(directory, fileDirectory))
+            processList.append(process)
+            process.start()
 
     for process in processList:
         process.join()
 
+    global filesAndWordCount
+    print(filesAndWordCount)
     timeExecuted = (time.time() - started) * 1000
     print('Time of execution: ' + str(timeExecuted))
-    # sortedFiles = sorted(filesAndWordCount.items(), key=lambda x: x[1])
-    # for item in sortedFiles:
-    #     print(item)
+
+
+if __name__ == '__main__':
+    main()
