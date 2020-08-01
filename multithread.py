@@ -25,9 +25,9 @@ class FilesList(threading.Thread):
             wordCount = 0
 
 
-# directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
+directory = '/Users/JohonAlimov/PycharmProjects/multiprocessing/files'
+# directory = sys.argv[1]
 
-directory = sys.argv[1]
 if not os.path.exists(directory):
     print('No such direction: ' + str(sys.argv[1])/
           'Exiting program')
@@ -52,4 +52,4 @@ for thread in threadList:
 threadLimiter.release()
 
 timeExecuted = (time.time() - started) * 1000
-6
+print(filesAndWordCount)
